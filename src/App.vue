@@ -1,14 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
   <router-view></router-view>
 </template>
 
 <script>
-
-
+import { provide,ref } from 'vue'
 export default {
   name: 'App',
-  components: {
-  }
+  setup(){
+    provide('menuVisible',ref(true))
+  },
 }
 </script>
+
+<style lang="scss">
+
+</style>

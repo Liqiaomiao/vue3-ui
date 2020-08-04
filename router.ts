@@ -1,9 +1,8 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import HelloWorld from './src/components/HelloWorld.vue'
 import Home from './src/views/Home.vue'
 import Doc from './src/views/Doc.vue'
 
-export const router  =   createRouter({
+export const router  =  createRouter({
     history: createWebHistory(),
     routes: [{
         path: '/',
